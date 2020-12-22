@@ -36,11 +36,11 @@ func Groups() []string {
 }
 
 type GroupTopicOffset struct {
-	Topic        string
-	Partition    int32
-	Offset       int64
-	LogEndOffset int64
-	Lag          int64
+	Topic        string `json:"topic"`
+	Partition    int32  `json:"partition"`
+	Offset       int64  `json:"offset"`
+	LogEndOffset int64  `json:"log_end_offset"`
+	Lag          int64  `json:"lag"`
 }
 
 // ListGroupOffset group offset 信息
