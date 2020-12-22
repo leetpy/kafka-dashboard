@@ -1,0 +1,5 @@
+runmode: debug
+addr: :8080
+kafka:
+  brokers:
+    - localhost:9092
